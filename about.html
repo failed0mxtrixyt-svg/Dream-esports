@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Dream Esports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .orbitron {
+            font-family: 'Orbitron', monospace;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2596be 0%, #1a7ca8 100%);
+        }
+        
+        .timeline-line {
+            background: linear-gradient(180deg, #2596be 0%, #1a7ca8 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-black/90 backdrop-blur-sm fixed w-full z-50 border-b border-blue-500/20">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                        <img src="assets/logo/logo.png" alt="Dream Esports Logo" class="w-8 h-8 rounded">
+                    </div>
+                    <span class="orbitron font-bold text-xl">DREAM ESPORTS</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                    <a href="rosters.html" class="hover:text-blue-400 transition">Rosters</a>
+                    <a href="staff.html" class="hover:text-blue-400 transition">Staff</a>
+                    <a href="about.html" class="hover:text-blue-400 transition text-blue-400">About</a>
+                    <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/95">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block hover:text-blue-400 transition">Home</a>
+                <a href="rosters.html" class="block hover:text-blue-400 transition">Rosters</a>
+                <a href="staff.html" class="block hover:text-blue-400 transition">Staff</a>
+                <a href="about.html" class="block hover:text-blue-400 transition text-blue-400">About</a>
+                <a href="contact.html" class="block hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 pt-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="orbitron font-black text-4xl md:text-6xl mb-6">ABOUT DREAM ESPORTS</h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto">
+                Building the future of competitive gaming through talent development and community engagement
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="orbitron text-3xl font-bold mb-6 text-blue-400">OUR MISSION</h2>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        Dream Esports was founded with a singular vision: to create a premier gaming organization 
+                        that not only competes at the highest level but also nurtures talent and builds a thriving 
+                        community around competitive gaming.
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        We believe in the power of teamwork, dedication, and continuous improvement. Our organization 
+                        is built on these core values, ensuring that every player, staff member, and community member 
+                        has the opportunity to grow and succeed.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-400 mb-2">15+</div>
+                            <div class="text-gray-400 text-sm">Professional Players</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400 mb-2">3</div>
+                            <div class="text-gray-400 text-sm">Competitive Games</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-400 mb-2">2024</div>
+                            <div class="text-gray-400 text-sm">Year Founded</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-600/20 to-blue-800/20 rounded-lg p-8 border border-blue-500/30">
+                        <i class="fas fa-trophy text-6xl text-blue-500 text-center block mb-6"></i>
+                        <h3 class="orbitron text-xl font-bold mb-4 text-center">COMPETITIVE EXCELLENCE</h3>
+                        <p class="text-gray-300 text-center">
+                            We strive for excellence in every competition, pushing boundaries and setting new standards 
+                            in professional esports.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="orbitron text-3xl font-bold text-center mb-12">CORE VALUES</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-blue-500/30 hover:border-blue-500/60 transition">
+                    <i class="fas fa-users text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-3">Teamwork</h3>
+                    <p class="text-gray-400 text-sm">Success is achieved through collaboration and mutual support</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-blue-500/30 hover:border-blue-500/60 transition">
+                    <i class="fas fa-graduation-cap text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-3">Development</h3>
+                    <p class="text-gray-400 text-sm">Continuous learning and skill improvement for all members</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-green-500/30 hover:border-green-500/60 transition">
+                    <i class="fas fa-heart text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-3">Community</h3>
+                    <p class="text-gray-400 text-sm">Building a supportive and inclusive gaming community</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-blue-500/30 hover:border-blue-500/60 transition">
+                    <i class="fas fa-medal text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-3">Excellence</h3>
+                    <p class="text-gray-400 text-sm">Pursuing the highest standards in competition and conduct</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="orbitron text-3xl font-bold text-center mb-12">OUR JOURNEY</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full timeline-line"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- 2024 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 text-right pr-8">
+                                <h3 class="orbitron text-xl font-bold text-blue-400">2024</h3>
+                                <p class="text-gray-300">Foundation of Dream Esports with initial Rainbow Six Siege roster</p>
+                            </div>
+                            <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-gray-800 z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <!-- Q2 2024 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 text-right pr-8"></div>
+                            <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-gray-800 z-10"></div>
+                            <div class="w-1/2 pl-8">
+                                <h3 class="orbitron text-xl font-bold text-blue-400">Q2 2024</h3>
+                                <p class="text-gray-300">Expansion into Rocket League with competitive 3v3 team</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Q3 2024 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 text-right pr-8">
+                                <h3 class="orbitron text-xl font-bold text-blue-400">Q3 2024</h3>
+                                <p class="text-gray-300">Launch of Call of Duty division and first major tournament participation</p>
+                            </div>
+                            <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-gray-800 z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <!-- Present -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 text-right pr-8"></div>
+                            <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-gray-800 z-10 animate-pulse"></div>
+                            <div class="w-1/2 pl-8">
+                                <h3 class="orbitron text-xl font-bold text-blue-400">Present</h3>
+                                <p class="text-gray-300">Competing across three major esports titles with growing community presence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="orbitron text-3xl font-bold text-center mb-12">PARTNERS & SPONSORS</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-lg text-center border border-gray-700">
+                    <i class="fas fa-headset text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-2">COMMUNICATION PARTNER</h3>
+                    <p class="text-gray-400 text-sm">Premium gaming headsets and audio equipment</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg text-center border border-gray-700">
+                    <i class="fas fa-tshirt text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-2">APPAREL PARTNER</h3>
+                    <p class="text-gray-400 text-sm">Custom team jerseys and merchandise</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg text-center border border-gray-700">
+                    <i class="fas fa-rocket text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="orbitron text-lg font-bold mb-2">ENERGY PARTNER</h3>
+                    <p class="text-gray-400 text-sm">Performance energy drinks for gamers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-blue-500/20 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                            <img src="assets/logo/logo.png" alt="Dream Esports Logo" class="w-6 h-6 rounded">
+                    </div>
+                    <span class="orbitron font-bold">DREAM ESPORTS</span>
+                </div>
+                    <p class="text-gray-400">Professional multi-game esports organization competing at the highest level.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4 text-blue-400">Team</h3>
+                    <ul class="space-y-2">
+                        <li><a href="rosters.html" class="text-gray-400 hover:text-white transition">Rosters</a></li>
+                        <li><a href="staff.html" class="text-gray-400 hover:text-white transition">Staff</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4 text-blue-400">Community</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Discord</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">TikTok</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4 text-blue-400">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Dream Esports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
